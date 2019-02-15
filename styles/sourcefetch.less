@@ -1,0 +1,86 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+atom-workspace atom-workspace-axis atom-pane-container atom-pane .item-views {
+  overflow-x: scroll;
+}
+
+.sourcefetch {
+  background-color: @app-background-color;
+  box-sizing: border-box;
+  max-width: 300px;
+  overflow-y: scroll;
+  .wrapper {
+    border-radius: 5px;
+    // width: 300px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    div {
+      border-radius: 5px;
+      padding: 2%;
+    }
+    .repeatableUnits{
+      background-color: @background-color-info;
+      .leftWrapper, .rightWrapper {
+        border-radius: 0;
+        display: inline-block;
+        padding: 0;
+        height: 300px;
+      }
+      .leftWrapper {
+        background-color: @background-color-success;
+        width: 20%;
+        vertical-align: top;
+        padding:6% 6% 100% 6%;
+        text-align: center;
+      }
+      .rightWrapper {
+        overflow-y: auto;
+        width: 80%;
+      }
+      .preBlock, .urlBlock{
+        background-color: @background-color-highlight;
+      }
+      .urlBlock {
+        word-wrap: break-word;
+      }
+      .leftIconBlocks ,.copyBlock , .upVoteBlock, .downVoteBlock, .bugBlock , .pasteBlock{
+          background-color: @background-color-highlight;
+          display: inline-block;
+          height: 20px;
+          margin: 8% 0;
+          width: 20px;
+          &:hover{
+            cursor: pointer;
+          }
+          img {
+            width: 16px;
+            height: 16px;
+          }
+      }
+      .copy{
+        background: url('C:/Users/Shreyan/github/sourcefetch/img/copy-content.png');
+      }
+      .upVote{
+        background: url('C:/Users/Shreyan/github/sourcefetch/img/up-arrow.png');
+      }
+      .downVote{
+        background: url('C:/Users/Shreyan/github/sourcefetch/img/down-arrow.png');
+      }
+      .bug{
+        background: url('C:/Users/Shreyan/github/sourcefetch/img/bug.png');
+      }
+      .paste{
+        background: url('C:/Users/Shreyan/github/sourcefetch/img/contract.png');
+      }
+    }
+    .showMore {
+      padding: 2% 10%;
+      text-align: center;
+      background-color: @background-color-highlight;
+    }
+  }
+}
